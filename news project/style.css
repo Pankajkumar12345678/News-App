@@ -1,0 +1,208 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+}
+
+/* global css */
+
+.obj-width{
+    max-width: 1200px;
+    margin: auto;
+}
+nav{
+    background-color: #2d4c50;
+    box-shadow: 0 7px 10px rgba(0, 0, 0, 0.3);
+}
+
+.navbar
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.3rem 0;
+}
+
+.navbar .logo{
+    color: #fff;
+    text-decoration: none;
+    font-weight:700;
+    font-size: 2.2rem;
+    letter-spacing:2px;
+}
+
+#search-input{
+    max-width: 400px;
+    padding:10px 20px;
+    border: none;
+    border-radius:25px;
+    font-size: 18px;
+    font-weight:500;
+    color: #333;
+    outline: none;
+}
+
+#search-button{
+    padding: 10px 20px;
+    background-color: #138065;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 25px;
+    margin-left: 10px;
+}
+
+#bolg-container{
+    padding: 3rem 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.blog-card{
+    width: 280px;
+    border: 1px solid #2d4c50;
+    border-radius:20px; /*10 px */
+    cursor: pointer;
+    padding: 1rem;
+    margin: 10px;
+}
+
+.blog-card:hover{
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.1);
+}
+
+.blog-card img{
+    width:100%;
+    height:280px;
+    object-fit:100%;
+    /* object-fit: cover; */
+    border-radius:10px;
+    margin-bottom:1rem;
+}
+
+.blog-card h2{
+    color: #141414;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.blog-card p{
+    font-size: 1.2rem;
+    padding-top: 0.7rem;
+}
+
+
+.more{
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-bottom:20px;
+}
+
+.more button{
+    padding: 15px 20px;
+    background-color: rgb(224, 7, 7);
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 50px;
+    margin-left:10px;
+}
+
+
+.spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #09f;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Button styles */
+button {
+    position: relative;
+    padding-right: 30px; /* Make space for spinner */
+}
+
+/* Hide spinner by default */
+button .spinner {
+    display: none;
+}
+
+/* Show spinner when loading */
+button.loading .spinner {
+    display: inline-block;
+}
+
+
+@media(max-width: 500px){
+    
+    nav{
+        padding: 0 20px;
+    }
+
+    .navbar .logo{
+        font-size:1.8rem;
+    }
+    #search-input{
+        width: 150px;
+        padding: 10px 10px;
+    }
+    .blog-card{
+        width:100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .search-container{
+    padding-right: 80px;
+}
+.search-container input{
+    padding: 10px 15px;
+    border-radius: 20px;
+    outline: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.search-container button{
+    background-color: #717871;
+    padding:10px 15px;
+    border-radius:20px;
+    outline: none;
+} */
